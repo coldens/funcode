@@ -3,7 +3,8 @@ import { createPipe } from './createPipe';
 
 describe('createPipe', () => {
   it('should return value if no functions are passed', () => {
-    const result = createPipe()('Hello world!');
+    const emptyPipe = createPipe();
+    const result = emptyPipe('Hello world!');
     expect(result).toBe('Hello world!');
   });
 
