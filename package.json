@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "test:cov": "vitest run --coverage",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc -p tsconfig.build.json"
   },
   "keywords": [
     "Functional",
