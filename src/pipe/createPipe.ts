@@ -90,5 +90,5 @@ export function createPipe<T, A, B, C, D, E, F, G, H, I, J>(
 ): OperationFun<T, any>;
 
 export function createPipe(...ops: OperationFun<any, any>[]) {
-  return (val: any) => pipe(val, ...ops);
+  return (val: any) => pipe.call(null, val, ...ops);
 }

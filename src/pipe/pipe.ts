@@ -6,7 +6,6 @@ import { OperationFun } from '../contracts/OperationFun';
  * @param ops Operations to apply.
  */
 export function pipe<T>(val: T): T;
-export function pipe<T>(val: T, ...ops: OperationFun<any, any>[]): any;
 export function pipe<T, A>(val: T, op1: OperationFun<T, A>): A;
 export function pipe<T, A, B>(
   val: T,
