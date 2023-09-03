@@ -1,9 +1,16 @@
 {
   "name": "funcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A functional typescript library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coldens/funcode.git"
+  },
   "scripts": {
     "test": "vitest",
     "test:cov": "vitest run --coverage",
